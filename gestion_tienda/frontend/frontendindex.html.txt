@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestión de Tienda</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarSeccion('usuario')">Usuario</a></li>
+                <li><a href="#" onclick="mostrarSeccion('cliente')">Cliente</a></li>
+                <li><a href="#" onclick="mostrarSeccion('producto')">Producto</a></li>
+                <li><a href="#" onclick="mostrarSeccion('proveedor')">Proveedor</a></li>
+                <li><a href="#" onclick="mostrarSeccion('ventas')">Ventas</a></li>
+                <li><a href="#" onclick="mostrarSeccion('informe')">Informe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Usuario -->
+        <section id="usuario" class="seccion">
+            <h2>Gestión de Usuario</h2>
+            <form onsubmit="guardarUsuario(event)">
+                <input type="text" id="userName" placeholder="Nombre del usuario">
+                <input type="email" id="userEmail" placeholder="Correo electrónico">
+                <button>Guardar</button>
+            </form>
+        </section>
+
+        <!-- Cliente -->
+        <section id="cliente" class="seccion oculto">
+            <h2>Gestión de Cliente</h2>
+            <form onsubmit="guardarCliente(event)">
+                <input type="text" id="clienteNombre" placeholder="Nombre del cliente">
+                <input type="text" id="clienteTelefono" placeholder="Teléfono">
+                <button>Guardar</button>
+            </form>
+        </section>
+
+        <!-- Producto -->
+        <section id="producto" class="seccion oculto">
+            <h2>Gestión de Producto</h2>
+            <form onsubmit="guardarProducto(event)">
+                <input type="text" id="productoNombre" placeholder="Nombre del producto">
+                <input type="number" id="productoPrecio" placeholder="Precio">
+                <input type="number" id="productoStock" placeholder="Stock">
+                <button>Guardar</button>
+            </form>
+        </section>
+
+        <!-- Proveedor -->
+        <section id="proveedor" class="seccion oculto">
+            <h2>Gestión de Proveedor</h2>
+            <form onsubmit="guardarProveedor(event)">
+                <input type="text" id="proveedorNombre" placeholder="Nombre del proveedor">
+                <input type="text" id="proveedorContacto" placeholder="Contacto">
+                <button>Guardar</button>
+            </form>
+        </section>
+
+        <!-- Ventas -->
+        <section id="ventas" class="seccion oculto">
+            <h2>Gestión de Ventas</h2>
+            <form onsubmit="guardarVenta(event)">
+                <input type="text" id="ventaProducto" placeholder="Producto">
+                <input type="number" id="ventaCantidad" placeholder="Cantidad">
+                <button>Registrar Venta</button>
+            </form>
+        </section>
+
+        <!-- Informe -->
+        <section id="informe" class="seccion oculto">
+            <h2>Informe del Sistema</h2>
+            <p>Se generarán reportes en esta área.</p>
+        </section>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal oculto">
+        <div class="modal-contenido">
+            <p id="modalMensaje"></p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

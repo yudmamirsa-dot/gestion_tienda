@@ -1,0 +1,48 @@
+function mostrarSeccion(id) {
+    document.querySelectorAll(".seccion").forEach(sec => sec.classList.add("oculto"));
+    document.getElementById(id).classList.remove("oculto");
+}
+
+function mostrarModal(msg) {
+    document.getElementById("modalMensaje").innerText = msg;
+    document.getElementById("modal").classList.remove("oculto");
+}
+
+function cerrarModal() {
+    document.getElementById("modal").classList.add("oculto");
+}
+
+/* VALIDACIONES Y GUARDADO */
+
+function guardarUsuario(e) {
+    e.preventDefault();
+    mostrarModal("Usuario guardado correctamente");
+}
+
+function guardarCliente(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("clienteNombre").value;
+
+    if (nombre.trim() === "") {
+        mostrarModal("El nombre del cliente es obligatorio");
+        return;
+    }
+
+    mostrarModal("Cliente registrado");
+}
+
+function guardarProducto(e) {
+    e.preventDefault();
+    mostrarModal("Producto guardado");
+}
+
+function guardarProveedor(e) {
+    e.preventDefault();
+    mostrarModal("Proveedor registrado");
+}
+
+function guardarVenta(e) {
+    e.preventDefault();
+    mostrarModal("Venta registrada correctamente");
+}
