@@ -1,171 +1,136 @@
-Gestión de Tienda – Proyecto SENA
+Gestión de Tienda – Proyecto Formativo SENA
 
-Sistema desarrollado como parte del proyecto formativo “Construcción de software integrador de tecnologías orientadas a servicios”, del programa Análisis y Desarrollo de Software (ADS).
+Programa: Análisis y Desarrollo de Software
+Evidencia: GA8-220501096-AA1-EV01
+Aprendiz: Yudi Marcela Mira Salazar
+Ficha: 2977402
+Repositorio: https://github.com/yudmamirsa-dot/gestion_tienda
 
-Este proyecto permite gestionar los módulos principales de una tienda:
+📌 Descripción del Proyecto
 
-Gestión de Usuario
+Este proyecto corresponde al desarrollo del sistema Gestión de Tienda, elaborado como parte del proyecto formativo del SENA “Construcción de software integrador de tecnologías orientadas a servicios”.
 
-Gestión de Cliente
+El sistema permite gestionar los principales módulos requeridos para la operación de una tienda:
 
-Gestión de Producto
+Gestión de usuarios
 
-Gestión de Proveedor
+Gestión de clientes
 
-Gestión de Ventas
+Gestión de proveedores
 
-Informes
+Gestión de productos
+
+Gestión de ventas
+
+Registro de detalles de venta
+
+🎯 Objetivo General
+
+Integrar los módulos del software desarrollados durante el proyecto formativo, asegurando el funcionamiento de las API REST, la base de datos y la documentación correspondiente para cumplir con la evidencia GA8.
+
+✔️ Estado Actual de Implementación (GA8)
+Módulo	Estado	Descripción
+Usuarios	✅ Funcional	API REST funcionando
+Clientes	✅ Funcional	CRUD completo
+Proveedores	⚠️ En proceso	Pendiente integración final
+Productos	⚠️ En proceso	CRUD en construcción
+Ventas	❌ Pendiente	Será integrado en GA9/GA10
+Base de Datos	✅ Lista	Script SQL incluido en la carpeta de evidencia
+Documentación	✅ Completa	Documento Word + capturas + estructura del proyecto
+Estructura del Repositorio
+gestion_tienda/
+│
+├── Evidencia_GA8/
+│   ├── capturas/
+│   │   ├── menu_principal.png
+│   │   ├── clientes.png
+│   │   ├── proveedores.png
+│   │   ├── productos.png
+│   │   └── ventas.png
+│   ├── base_datos.sql
+│   ├── Evidencia_GA8_Integración.docx
+│   ├── instrucciones.txt
+│   └── README_evidencia.txt
+│
+├── README.md  
+
 
 Tecnologías Utilizadas
-Frontend
 
-HTML5
+MySQL 8.x
 
-CSS3
+Node.js / Express (si aplica)
 
-JavaScript
+API REST
 
-Diseño responsivo
-
-Modales y validaciones
+PowerShell / Git / GitHub
 
 Base de Datos
 
-MySQL (modelo conceptual, lógico y físico)
+El archivo SQL se encuentra en:
 
-Scripts SQL
-
-Herramientas
-
-Git y GitHub
-
-Visual Studio Code
-
-XAMPP o MySQL Workbench
-
-Canva para prototipos
-
-Android Studio (maquetación XML solicitada por el SENA)
-gestion_tienda/
-│── frontend/
-│     ├── index.html
-│     ├── style.css
-│     └── app.js
-│
-│── backend/
-│     └── server.js  (archivo opcional)
-│
-│── database/
-│     ├── script_mysql.sql
-│     ├── modelo_ER.png
-│     └── modelo_relacional.png
-│
-│── docs/
-│     ├── manual_usuario.pdf
-│     ├── manual_instalacion.pdf
-│     └── matriz_trazabilidad.xlsx
-│
-│── tests/
-│     ├── casos_de_prueba.xlsx
-│     └── ambiente_pruebas.pdf
-│
-└── README.md
+/Evidencia_GA8/base_datos.sql
 
 
-Descripción de Módulos
+Incluye:
+
+Tabla usuarios
+
+Tabla clientes
+
+Tabla proveedores
+
+Tabla productos
+
+Tabla ventas
+
+Tabla venta_items
+
+Capturas Incluidas
+
+Las capturas del sistema y prototipos están en:
+
+/Evidencia_GA8/capturas/
 
 
-1. Módulo Usuario
+Incluyen:
 
-Permite registrar datos básicos del usuario:
+Menú principal
 
-Nombre
+Clientes
 
-Correo electrónico
+Proveedores
 
-2. Módulo Cliente
+Productos
 
-Permite gestionar clientes:
+Ventas
 
-Nombre
+Evidencia GA8 Incluida
 
-Teléfono
+Este repositorio contiene los elementos requeridos por la evidencia GA8:
 
-Incluye validación obligatoria del nombre.
+Documento Word de integración
 
-3. Módulo Producto
+ Script SQL
 
-Registro de productos:
+Prototipo
 
-Nombre
+Capturas de pantalla
 
-Precio
+Carpeta completa de evidencia
 
-Stock
+Repositorio actualizado en GitHub
 
-4. Módulo Proveedor
+Notas Importantes
 
-Gestión de proveedores:
+Este repositorio está actualizado y contiene la evidencia completa para evaluación.
 
-Nombre
+Los módulos faltantes serán integrados en las próximas evidencias 
+
+La carpeta Evidencia_GA8 contiene absolutamente todo lo solicitado por la actividad.
 
 Contacto
 
-5. Módulo Ventas
-
-Permite registrar ventas:
-
-Producto
-
-Cantidad
-
-6. Módulo Informe
-
-Espacio destinado para reportes como:
-
-Ventas totales
-
-Productos más vendidos
-
-Movimientos del día
-
-
-Instalación y Ejecución
-1. Clonar el repositorio
-
-git clone https://github.com/TU_USUARIO/gestion_tienda.git
-
-2. Abrir el proyecto
-
-Abrir Visual Studio Code
-
-Abrir la carpeta gestion_tienda
-
-3. Ejecutar el frontend
-
-Solo abre:
-
-frontend/index.html
-
-en tu navegador.
-
-Documentación Incluida
-
-El proyecto incluye:
-
-Manual de Usuario
-Manual de Instalación
-Matriz de Trazabilidad
-Casos de Prueba
-
-Todos ubicados en la carpeta docs/ y tests/.
-
-Autora
-
-Yudi Mira
-Estudiante del programa Análisis y Desarrollo de Software – SENA
+Yudi Marcela Mira Salazar
+Aprendiz SENA
 Proyecto: Gestión de Tienda
-
-Estado del Proyecto
-
-Versión 1.0 – Frontend totalmente funcional.
