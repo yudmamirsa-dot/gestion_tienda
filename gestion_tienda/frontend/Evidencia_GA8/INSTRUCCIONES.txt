@@ -1,0 +1,12 @@
+INSTRUCCIONES PARA EJECUTAR EL PROYECTO
+
+1. Clonar el repositorio o copiar el proyecto a NetBeans/Eclipse.
+2. Configurar la conexión a MySQL.
+3. Ejecutar el script SQL:
+   gestion_tienda.sql
+4. Desplegar el proyecto en Tomcat o Glassfish.
+5. Abrir en navegador:
+   http://localhost:8080/gestion_tienda/
+
+El sistema integra:
+Usuarios, Clientes, Proveedores, Productos, Ventas y API REST.
