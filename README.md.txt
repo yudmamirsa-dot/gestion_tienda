@@ -6,7 +6,7 @@ Aprendiz: Yudi Marcela Mira Salazar
 Ficha: 2977402
 Repositorio: https://github.com/yudmamirsa-dot/gestion_tienda
 
-📌 Descripción del Proyecto
+Descripción del Proyecto
 
 Este proyecto corresponde al desarrollo del sistema Gestión de Tienda, elaborado como parte del proyecto formativo del SENA “Construcción de software integrador de tecnologías orientadas a servicios”.
 
@@ -24,19 +24,19 @@ Gestión de ventas
 
 Registro de detalles de venta
 
-🎯 Objetivo General
+Objetivo General
 
 Integrar los módulos del software desarrollados durante el proyecto formativo, asegurando el funcionamiento de las API REST, la base de datos y la documentación correspondiente para cumplir con la evidencia GA8.
 
-✔️ Estado Actual de Implementación (GA8)
+Estado Actual de Implementación (GA8)
 Módulo	Estado	Descripción
-Usuarios	✅ Funcional	API REST funcionando
-Clientes	✅ Funcional	CRUD completo
-Proveedores	⚠️ En proceso	Pendiente integración final
-Productos	⚠️ En proceso	CRUD en construcción
-Ventas	❌ Pendiente	Será integrado en GA9/GA10
-Base de Datos	✅ Lista	Script SQL incluido en la carpeta de evidencia
-Documentación	✅ Completa	Documento Word + capturas + estructura del proyecto
+Usuarios	Funcional	API REST funcionando
+Clientes	Funcional	CRUD completo
+Proveedores	En proceso	Pendiente integración final
+Productos	En proceso	CRUD en construcción
+Ventas	Pendiente	Será integrado en GA9/GA10
+Base de Datos	Lista	Script SQL incluido en la carpeta de evidencia
+Documentación	completa	Documento Word + capturas + estructura del proyecto
 Estructura del Repositorio
 gestion_tienda/
 │
@@ -134,3 +134,4 @@ Contacto
 Yudi Marcela Mira Salazar
 Aprendiz SENA
 Proyecto: Gestión de Tienda
+
