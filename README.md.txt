@@ -1,137 +1,55 @@
-Gestión de Tienda – Proyecto Formativo SENA
+Este repositorio contiene la integración básica del proyecto Gestión de Tienda con una API REST, como parte de la Evidencia GA8.
 
-Programa: Análisis y Desarrollo de Software
-Evidencia: GA8-220501096-AA1-EV01
-Aprendiz: Yudi Marcela Mira Salazar
-Ficha: 2977402
-Repositorio: https://github.com/yudmamirsa-dot/gestion_tienda
+Módulos integrados
 
-Descripción del Proyecto
-
-Este proyecto corresponde al desarrollo del sistema Gestión de Tienda, elaborado como parte del proyecto formativo del SENA “Construcción de software integrador de tecnologías orientadas a servicios”.
-
-El sistema permite gestionar los principales módulos requeridos para la operación de una tienda:
-
-Gestión de usuarios
-
-Gestión de clientes
-
-Gestión de proveedores
-
-Gestión de productos
-
-Gestión de ventas
-
-Registro de detalles de venta
-
-Objetivo General
-
-Integrar los módulos del software desarrollados durante el proyecto formativo, asegurando el funcionamiento de las API REST, la base de datos y la documentación correspondiente para cumplir con la evidencia GA8.
-
-Estado Actual de Implementación (GA8)
-Módulo	Estado	Descripción
-Usuarios	Funcional	API REST funcionando
-Clientes	Funcional	CRUD completo
-Proveedores	En proceso	Pendiente integración final
-Productos	En proceso	CRUD en construcción
-Ventas	Pendiente	Será integrado en GA9/GA10
-Base de Datos	Lista	Script SQL incluido en la carpeta de evidencia
-Documentación	completa	Documento Word + capturas + estructura del proyecto
-Estructura del Repositorio
-gestion_tienda/
-│
-├── Evidencia_GA8/
-│   ├── capturas/
-│   │   ├── menu_principal.png
-│   │   ├── clientes.png
-│   │   ├── proveedores.png
-│   │   ├── productos.png
-│   │   └── ventas.png
-│   ├── base_datos.sql
-│   ├── Evidencia_GA8_Integración.docx
-│   ├── instrucciones.txt
-│   └── README_evidencia.txt
-│
-├── README.md  
-
-
-Tecnologías Utilizadas
-
-MySQL 8.x
-
-Node.js / Express (si aplica)
-
-API REST
-
-PowerShell / Git / GitHub
-
-Base de Datos
-
-El archivo SQL se encuentra en:
-
-/Evidencia_GA8/base_datos.sql
-
-
-Incluye:
-
-Tabla usuarios
-
-Tabla clientes
-
-Tabla proveedores
-
-Tabla productos
-
-Tabla ventas
-
-Tabla venta_items
-
-Capturas Incluidas
-
-Las capturas del sistema y prototipos están en:
-
-/Evidencia_GA8/capturas/
-
-
-Incluyen:
-
-Menú principal
+Usuarios
 
 Clientes
 
-Proveedores
+Tecnologías utilizadas
 
-Productos
+Frontend: HTML, CSS y JavaScript
 
-Ventas
+Backend (API REST): Node.js + Express
 
-Evidencia GA8 Incluida
+Base de datos: MySQL
 
-Este repositorio contiene los elementos requeridos por la evidencia GA8:
+Ejecución de la API
 
-Documento Word de integración
+Ir a:
 
- Script SQL
+gestion_tienda/api_rest
 
-Prototipo
 
-Capturas de pantalla
+Instalar dependencias:
 
-Carpeta completa de evidencia
+npm install
 
-Repositorio actualizado en GitHub
 
-Notas Importantes
+Ejecutar servidor:
 
-Este repositorio está actualizado y contiene la evidencia completa para evaluación.
+node server.js
 
-Los módulos faltantes serán integrados en las próximas evidencias 
 
-La carpeta Evidencia_GA8 contiene absolutamente todo lo solicitado por la actividad.
+API disponible en:
 
-Contacto
+http://localhost:3000
 
-Yudi Marcela Mira Salazar
-Aprendiz SENA
-Proyecto: Gestión de Tienda
+Endpoints usados
+Usuarios
 
+GET /api/usuarios
+
+POST /api/usuarios
+
+Clientes
+
+GET /api/clientes
+
+POST /api/clientes
+
+Evidencias
+
+Las capturas solicitadas están en:
+
+Evidencia_GA8/capturas
